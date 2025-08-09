@@ -1,12 +1,13 @@
 
 body {
-    background-color: #242c1a; /* Dark background */
+    background-color: black; /* Dark background */
     color: #ffffff; /* White text */
 }
 
 /* Navigation */
 .navigation {
-    background-color: #e91e63; /* Pink background */
+    background-color: black; 
+    border-bottom: 2px solid #e3b1c2;
     color: white;
     padding: 1rem 0;
 }
@@ -28,16 +29,8 @@ body {
     font-weight: bold;
 }
 
-/* Main Section */
-.main-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem auto;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
+
+
 
 .language-selector {
     position: fixed;
@@ -81,7 +74,7 @@ body {
   text-align: center;
 }
 
-/* Modal header, main, footer styles mimic your page */
+/* Modal header, main, footer styles */
 .modal-content h2 {
   color: #e91e63;
   margin-bottom: 1rem;
@@ -110,11 +103,14 @@ body {
 }
 /* Profile Image Styling */
 .profile-image img {
-    border-radius: 40%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     max-width: 55%;
     height:auto;
     animation: blink 3s infinite ease-in-out;
+    box-shadow:
+    0 0 5px   #e3b1c2,
+    0 0 10px  #e3b1c2,
+    0 0 20px  #e3b1c2;
+    
 }
 .profile-image {
 order: 2;
@@ -130,16 +126,7 @@ order: 2;
     }
     92%, 98% { 
         content: url('images/eyes-closed.jpg'); /* Closed eyes briefly */
-    }
 }
-.main-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 2rem auto;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
 
 /* Make sure personal-info is on the left, profile-image on the right */
@@ -159,19 +146,30 @@ order: 2;
   font-size: 5rem;
   font-family: 'Dancing Script',cursive;
   font-weight: bold;
-  color: #e91e63;
+  color: #e3b1c2;
   opacity: 0;
   animation: fadeInUp 0.5s ease forwards;
 }
 
 /* delay for letters */
-.personal-info .animated-text span:nth-child(1) { animation-delay: 0.1s; }
-.personal-info .animated-text span:nth-child(2) { animation-delay: 0.2s; }
-.personal-info .animated-text span:nth-child(3) { animation-delay: 0.3s; }
-.personal-info .animated-text span:nth-child(4) { animation-delay: 0.4s; }
-.personal-info .animated-text span:nth-child(5) { animation-delay: 0.5s; }
-.personal-info .animated-text span:nth-child(6) { animation-delay: 0.6s; }
-.personal-info .animated-text span:nth-child(7) { animation-delay: 0.7s; }
+.personal-info .animated-text span:nth-child(1)  { animation-delay: 0.1s; }
+.personal-info .animated-text span:nth-child(2)  { animation-delay: 0.2s; }
+.personal-info .animated-text span:nth-child(3)  { animation-delay: 0.3s; }
+.personal-info .animated-text span:nth-child(4)  { animation-delay: 0.4s; }
+.personal-info .animated-text span:nth-child(5)  { animation-delay: 0.5s; }
+.personal-info .animated-text span:nth-child(6)  { animation-delay: 0.6s; }
+.personal-info .animated-text span:nth-child(7)  { animation-delay: 0.7s; }
+.personal-info .animated-text span:nth-child(8)  { animation-delay: 0.8s; }
+.personal-info .animated-text span:nth-child(9)  { animation-delay: 0.9s; }
+.personal-info .animated-text span:nth-child(10) { animation-delay: 1.0s; }
+.personal-info .animated-text span:nth-child(11) { animation-delay: 1.1s; }
+.personal-info .animated-text span:nth-child(12) { animation-delay: 1.2s; }
+.personal-info .animated-text span:nth-child(13) { animation-delay: 1.3s; }
+.personal-info .animated-text span:nth-child(14) { animation-delay: 1.4s; }
+.personal-info .animated-text span:nth-child(15) { animation-delay: 1.5s; }
+.personal-info .animated-text span:nth-child(16) { animation-delay: 1.6s; }
+.personal-info .animated-text span:nth-child(17) { animation-delay: 1.7s; }
+
 
 @keyframes fadeInUp {
   from {
@@ -195,11 +193,12 @@ order: 2;
 
 /* Footer */
 .footer {
-    background-color: #e91e63;
+    background-color: black;
+    border-top: 2px solid #e3b1c2;
     color: white;
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
+    padding: 10px 0;
+    margin-top: 0.5rem;
 }
 
 .footer h5 {
@@ -220,48 +219,25 @@ order: 2;
 
 /* General Styles */
 body {
-    background-color: #1a202c; /* Dark background */
-    color: #ffffff; /* White text */
-}
-
-/* Navigation */
-.navigation {
-    background-color: #e91e63; /* Pink background */
-    color: white;
-    padding: 1rem 0;
-}
-
-.navigation .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    background-color: black; /* Dark background */
     color: white;
 }
 
-.navigation .nav-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.navigation .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 /* Main Section */
 .main-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem auto;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 #about-me-btn {
-  background-color: #e91e63;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #e3b1c2;
   color: white;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -272,7 +248,7 @@ body {
 }
 
 #about-me-btn:hover {
-  background-color: #c2185b; /* darker pink */
+  background-color: #ee8ab2; /* darker pink */
 }
 
 
