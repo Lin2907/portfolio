@@ -62,11 +62,11 @@ body {
 
 
 .modal-content {
-  background-color: white;
+  background-color: black;
   color: #1a202c;
-  max-width: 600px;
+  max-width: 100%;
   width: 100%;
-  border: 2px solid #e91e63;
+  border: 2px solid #e3b1c2;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(233, 30, 99, 0.4);
@@ -76,7 +76,7 @@ body {
 
 /* Modal header, main, footer styles */
 .modal-content h2 {
-  color: #e91e63;
+  color: black;
   margin-bottom: 1rem;
 }
 
@@ -93,16 +93,91 @@ body {
   right: 12px;
   font-size: 28px;
   font-weight: bold;
-  color: #de31d8;
+  color: #e3b1c2;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .close:hover {
-  color: #e91e63;
+    color: #f1588b;
 }
+/* Modal background overlay */
+
+/* Modal content box */
+.modal-content {
+  background-color: black;
+  color: white;
+  border: 3px solid #e3b1c2;
+  width: 800px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 0 30px #f18daeaa;
+  overflow-y: auto;
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #e3b1c2;
+  color: black;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.modal-header h2 {
+    color: black;
+    font-size: 2rem;
+    padding-left: 35%;
+    font-style: italic;
+}
+
+/* Close Button */
+.close {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+  user-select: none;
+}
+
+/* Modal Main Content */
+.modal-main {
+  padding: 1.5rem;
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.modal-main section {
+  margin-bottom: 1.2rem;
+}
+
+/* Modal Footer */
+.modal-footer {
+  background-color:#e3b1c2;
+  color: black;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+/*End of Modal need to check*/
 /* Profile Image Styling */
+
 .profile-image img {
+    opacity: 0;
+  transition: opacity 1.5s ease-in-out;
     max-width: 55%;
     height:auto;
     animation: blink 3s infinite ease-in-out;
@@ -111,6 +186,9 @@ body {
     0 0 10px  #e3b1c2,
     0 0 20px  #e3b1c2;
     
+}
+.profile-image img.visible {
+  opacity: 1;
 }
 .profile-image {
 order: 2;
