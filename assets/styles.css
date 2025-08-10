@@ -12,7 +12,8 @@ body {
 }
 
 .navigation .logo {
-    max-width: 5%;
+    max-width: 7%;
+  
 }
 
 .navigation .nav-links {
@@ -294,7 +295,7 @@ order: 2;
     color: white;
     text-align: center;
     padding: 10px 0;
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
 }
 
 .footer h5 {
