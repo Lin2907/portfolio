@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navigation -->
+  <header class="navigation">
+    <nav class="container mx-auto flex justify-between items-center px-4">
+      <a href="index.html" class="logo"><img src="assets/images/logo.jpg" alt="Logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/cv/english-cv.pdf" target="_blank">Download CV</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <main class="container mx-auto py-12">
+    <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center">My Projects</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card Example -->
+      <div class="bg-gray-900 border-2 border-pink-400 rounded-xl p-6 flex flex-col justify-between">
+        <h2 class="text-2xl font-semibold mb-4">Project 1</h2>
+        <p class="mb-6">A short description of your project goes here. Highlight features or tech used.</p>
+        <div class="mt-auto flex gap-4">
+          <a href="https://yourprojectlive.com" target="_blank" class="px-4 py-2 bg-pink-600 rounded hover:bg-pink-700 transition">Live Site</a>
+          <a href="https://github.com/yourgithub/project1" target="_blank" class="px-4 py-2 bg-gray-800 border border-pink-400 rounded hover:bg-pink-700 transition">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Duplicate cards for more projects -->
+      <div class="bg-gray-900 border-2 border-pink-400 rounded-xl p-6 flex flex-col justify-between">
+        <h2 class="text-2xl font-semibold mb-4">Project 2</h2>
+        <p class="mb-6">A short description of your second project goes here.</p>
+        <div class="mt-auto flex gap-4">
+          <a href="#" target="_blank" class="px-4 py-2 bg-pink-600 rounded hover:bg-pink-700 transition">Live Site</a>
+          <a href="#" target="_blank" class="px-4 py-2 bg-gray-800 border border-pink-400 rounded hover:bg-pink-700 transition">GitHub</a>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 border-2 border-pink-400 rounded-xl p-6 flex flex-col justify-between">
+        <h2 class="text-2xl font-semibold mb-4">Project 3</h2>
+        <p class="mb-6">A short description of your third project goes here.</p>
+        <div class="mt-auto flex gap-4">
+          <a href="#" target="_blank" class="px-4 py-2 bg-pink-600 rounded hover:bg-pink-700 transition">Live Site</a>
+          <a href="#" target="_blank" class="px-4 py-2 bg-gray-800 border border-pink-400 rounded hover:bg-pink-700 transition">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-12">
+    <div class="container">
+      <div class="social-icons flex justify-center gap-6 mt-4">
+        <a href="mailto:holinda_b@hotmail.com"><i class="fas fa-envelope"></i> <em>holinda_b@hotmail.com</em></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>

@@ -1,13 +1,13 @@
 body {
-    background-color: black; /* Dark background */
-    color: #ffffff; /* White text */
+    background-color: black;
+    color: white;
 }
 
 /* Navigation */
 .navigation {
-    background-color: black; 
-    border-bottom: 2px solid #e3b1c2;
-    color: white;
+    background-color:black;
+    border-bottom: solid 1px #e3b1c2;
+    color:white;
     padding: 1rem 0;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .navigation .nav-links a {
-    color: white;
+    color:white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -49,20 +49,6 @@ body {
     border-radius: 2px;
 }
 
-
-
-.language-selector {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    gap: 10px;
-    font-size: 1.5rem;
-}
-
-.flag {
-    cursor: pointer;
-}
 /* Modal Style */
 .modal {
     display: none;
@@ -210,21 +196,25 @@ body {
   opacity: 1;
 }
 .profile-image {
+  padding: 2%;
 order: 2;
   flex: 1 1 50%;
   display: flex;
   justify-content: flex-end;
-}
+} 
+
 
 /* Keyframes for blinking */
-@keyframes blink {
+
+ @keyframes blink {
     0%, 90%, 100% { 
-        content: url('images/eyes-open.jpg'); /* Open eyes most of the time */
+        content: url('images/eyes-open.jpg'); 
     }
     94%, 98% { 
-        content: url('images/eyes-closed.jpg'); /* Closed eyes briefly */
+        content: url('images/eyes-closed.jpg'); 
+    }
 }
-}
+
 
 /* Make sure personal-info is on the left, profile-image on the right */
 .personal-info {
@@ -290,20 +280,21 @@ order: 2;
 
 /* Footer */
 .footer {
-    background-color: black;
-    border-top: 2px solid #e3b1c2;
+    background-color:black;
+    border-top:solid 1px #e3b1c2;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     margin-top: 0.1rem;
 }
 
 .footer h5 {
-    margin-bottom: 1rem;
+    margin-bottom:0.5rem;
     font-weight: bold;
 }
 
 .footer .social-icons {
+   padding-top: 2px;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -311,7 +302,7 @@ order: 2;
 
 .footer .social-icons a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* General Styles */
@@ -324,7 +315,7 @@ order: 2;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
